@@ -108,8 +108,7 @@ export class LaunchesService {
   constructor(private http: HttpClient) { }
 
   private buildUrl(options: LaunchQuery = {}) {
-    // tslint:disable-next-line: prefer-const
-    let query = [];
+    const query = [];
     if (options.offset) {
       query.push('offset=' + options.offset);
     }

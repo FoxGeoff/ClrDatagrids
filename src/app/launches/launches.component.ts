@@ -33,6 +33,7 @@ export class LaunchesComponent implements OnInit {
   }
 
   getLaunches(state: ClrDatagridStateInterface) {
+    // tslint:disable-next-line: deprecation
     console.log(event);
     const options: LaunchQuery = {};
     if (state.page && state.page.from) {
