@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "clr-data-grids": {
+    "ClrDatagrids": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
