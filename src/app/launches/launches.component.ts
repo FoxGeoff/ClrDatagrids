@@ -64,5 +64,13 @@ export class LaunchesComponent implements OnInit {
       this.launching = false;
     }, 6000);
   }
+
+  onEdit() {
+
+  }
+
+  onAbort() {
+
+  }
 }
 
