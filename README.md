@@ -17,7 +17,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1. Run: ```npm install sass --save```
 2. Ref: <https://sass-lang.com/>
 
-## Tasks
+## Tasks: Add Launch component, data and services
 
 * Basic datagrid
   * Columns
