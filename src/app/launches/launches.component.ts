@@ -28,7 +28,7 @@ export class LaunchesComponent implements OnInit {
   constructor(private service: LaunchesService) { }
 
   ngOnInit(): void {
-    this.response = LaunchData; // Client side
+    /* this.response = LaunchData; // Client side */
     console.log(this.datagrid);
   }
 

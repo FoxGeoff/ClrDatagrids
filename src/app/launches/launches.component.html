@@ -1,6 +1,6 @@
 
-<clr-datagrid [(clrDgSelected)]="selected" #datagridRef>
-  <!-- <clr-datagrid (clrDgRefresh)="getLaunches($event)" [(clrDgSelected)]="selected" [clrDgLoading]="loading"> -->
+<!-- <clr-datagrid [(clrDgSelected)]="selected" #datagridRef> -->
+  <clr-datagrid (clrDgRefresh)="getLaunches($event)" [(clrDgSelected)]="selected" [clrDgLoading]="loading">
     <clr-dg-action-bar *ngIf="selected.length">
       <div class="btn-group">
         <button type="button" class="btn btn-sm btn-warning-outline" (click)="onEdit()"><clr-icon shape="clock"></clr-icon> Delay</button>
@@ -15,8 +15,8 @@
     <clr-dg-column [clrDgField]="'net'">Expected</clr-dg-column>
     <clr-dg-column>Launch</clr-dg-column>
 
-    <clr-dg-row *clrDgItems="let launch of response?.launches" [clrDgItem]="launch">
-    <!-- <clr-dg-row *ngFor="let launch of response?.launches" [clrDgItem]="launch"> -->
+     <!-- <clr-dg-row *clrDgItems="let launch of response?.launches" [clrDgItem]="launch"> -->
+    <clr-dg-row *ngFor="let launch of response?.launches" [clrDgItem]="launch">
       <clr-dg-cell>{{launch.id}}</clr-dg-cell>
       <clr-dg-cell>{{launch.name}}</clr-dg-cell>
       <clr-dg-cell>{{launch?.rocket?.name}}</clr-dg-cell>
